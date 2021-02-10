@@ -61,7 +61,7 @@ $post->crons()->create([
 In this case you can ask for your pattern if it is due:
 
 ``` php
-    App\Models\Post::latest()->first()->isDue()
+App\Models\Post::latest()->first()->isDue()
 ```
 
 In our example it returns true only for the first of january. 
