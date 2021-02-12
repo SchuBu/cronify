@@ -71,7 +71,18 @@ You can add multiple cron patterns. If at least one rule matches you get true.
 
 You can provide a date for the method ```->isDue($timestamp) ``` so you can check the due of your model at a given date. 
 
+## Validation
+You can validate a submitted cron pattern by using ```CronPatternRule```
+``` php
+['cron' => ['array', new CronPatternRule]]
+```
 
+Submit your cron pattern as an associative array with the keys ```minute, hour, day, month, weekday```. If you submit the pattern as a string please split it into an array.
+
+## Roadmap
+* add different rules for validation of a provided string and a provided array ```array: new CronPatternArrayRule``` and ```string: new CronPatternStringRule```
+* integrate a form component
+* integrate testing
 
 [comment]: <> (### Testing)
 
