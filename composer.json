@@ -20,7 +20,7 @@
         "dragonmantank/cron-expression": "^v3.1"
     },
     "require-dev": {
-        "orchestra/testbench": "^4.0",
+        "orchestra/testbench": "^v5.16|^v6.12",
         "phpunit/phpunit": "^8.0"
     },
     "autoload": {
